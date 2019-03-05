@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Display = () => {
+
+
+const Display = props => {
     return (
         <div>
-            <h2>Display</h2>
+            <div>{props.ballCount} balls out of 4</div>
+            <div>{props.strikeCount} strikes out of 3</div>
         </div>
-    );
-};
+    )
+}
+
 
 export default Display;
