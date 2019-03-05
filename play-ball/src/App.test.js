@@ -57,7 +57,7 @@ describe('The App Component', () => {
       test('strike count resets at 3 strikes', () => {
         const strikeBtn = dashboardComponent.getByTitle('strikeBtn');
         fireEvent.click(strikeBtn);
-        fireEvent.click(strikeBtn); //fireEvent keeps log of past uses (line 62) so only 2 was needed in this test to simulate 3 button clicks.
+        fireEvent.click(strikeBtn); 
         const strikeCount = displayComponent.getByTitle('strikes-count');
         expect(strikeCount).toHaveTextContent('0');
       })
