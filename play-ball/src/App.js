@@ -36,7 +36,7 @@ class App extends Component {
   };
 
   componentDidUpdate = (prevProps, prevState) => {
-    if((this.state.balls > 4) || (this.state.strikes > 3)) {
+    if((this.state.balls > 4) || (this.state.strikes > 2)) {
       this.setState({
         balls: 0,
         strikes: 0,
