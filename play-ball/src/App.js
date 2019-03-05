@@ -47,6 +47,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1>Play Ball</h1>
         <Display 
           ballCount = {this.state.balls} 
           strikeCount = {this.state.strikes} 
